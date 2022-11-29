@@ -2,23 +2,29 @@
     background-color: rgb(200, 0, 0);
     color: white;
     border: none;
-    max-height: 36px;
-    max-width: 105px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
     border-radius: 2px;
     cursor: pointer;
     margin-right: 8px;
+    margin-left: 20px;
     transition: opacity 1s;
+    vertical-align: top;
 
 }
 
 .join_button{
     background-color: white;
-    border: rgb(41, 118, 211);
+    border: rgb(6, 95, 212);
     border: solid;
     border-width: 1px;
-    color: rgb(41, 118, 211);
-    max-height: 36px;
-    max-width: 62px;
+    color: rgb(6, 95, 212);
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
     border-radius: 2px;
     cursor: pointer;
     transition: background-color 1s, color 1s ;
@@ -26,17 +32,20 @@
 }
 
 .tweet_button{
-    background-color: rgb(32, 121, 193);
+    background-color: rgb(29, 155, 240);
     color: white;
     border: none;
-    max-height: 36px;
-    max-width: 70px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
     border-radius: 18px;
     font-weight: bold;
     font-size: 15px;
     cursor: pointer;
     margin-left: 8px;
     transition: box-shadow 0.2s;
+    vertical-align: top;
     
 }
 
@@ -50,7 +59,7 @@
 }
 
 .join_button:hover{
-    background-color: rgb(41, 118, 211);
+    background-color: rgb(6, 95, 212);;
     color: white;
 }
 
