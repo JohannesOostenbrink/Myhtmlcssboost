@@ -1,0 +1,25 @@
+.thumbnail{
+    width: 300px;
+    display: block;
+}
+
+.search_bar{
+    display: block;
+}
+
+.video_preview{
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+}
+
+.channel_picture{
+    display: inline-block;
+    width: 50px;
+}
+
+.video_info {
+    display: inline-block;
+    width: 200px;
+}
