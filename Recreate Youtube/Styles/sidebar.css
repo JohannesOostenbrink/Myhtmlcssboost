@@ -1,9 +1,7 @@
-.sidebar{
+.side_bar{
     position: fixed;
     left: 0;
     bottom: 0;
-    top: 55px;
-    right: 72px;
-
+    top: 60px;
     background-color: white;
 }
