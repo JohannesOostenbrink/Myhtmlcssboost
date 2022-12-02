@@ -58,6 +58,10 @@
 }
 
 .search_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     height: 40px;
     width: 66px;
     background-color: rgb(237, 235, 235);
@@ -69,9 +73,33 @@
 }
 
 .search_icon{
+    
     height: 25px;
-    margin-top: 4px;   
+     
 
+}
+
+.search_button div, .voice_search div{
+    position:absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+
+    font-size: 12px;
+
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    pointer-events: none;
+
+}
+
+.search_button:hover div, .voice_search:hover div{
+    opacity: 1;
 }
 
 .voice_search{
@@ -80,13 +108,21 @@
     border-radius: 20px;
     border: none;
     background-color: rgb(237, 235, 235);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .voice_icon{
     height: 24px;
-    margin-top: 4px;
     
 }
+
+.voice_search div{
+    white-space: nowrap;
+}
+
 
 .right_section{
     display: flex;
@@ -111,11 +147,14 @@
 
 }
 
-.notification_box{
+.notification_box, .apps_container, .camera_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
 
-.notification_count{
+ .notification_count{
     position: absolute;
     right: -5px;
     top: -2px;
@@ -129,6 +168,33 @@
     padding-bottom: 2px;
     border-radius: 10px;
 
+}
+
+.notification_box .notification_sticker, .apps_container div, .camera_container div{
+    position:absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+
+    font-size: 12px;
+    font-family: Roboto, Arial;
+
+    bottom: -30px;
+    opacity: 0;
+    
+    transition: opacity 0.2s;
+}
+
+.apps_container div{
+    white-space: nowrap;
+}
+
+.notification_box:hover .notification_sticker, .apps_container:hover div, .camera_container:hover div{
+    opacity:1;
 }
 
 .user_image {
